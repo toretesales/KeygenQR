@@ -1,0 +1,290 @@
+:root {
+  /* Strawberry */
+  --strawberry-100: #ffc8c2;
+  --strawberry-300: #ed5353;
+  --strawberry-500: #c6262e;
+  --strawberry-700: #a10705;
+  --strawberry-900: #7a0000;
+
+  /* Orange */
+  --orange-100: #ffc27d;
+  --orange-300: #ffa154;
+  --orange-500: #f37329;
+  --orange-700: #cc3b02;
+  --orange-900: #a62100;
+
+  /* Banana */
+  --banana-100: #fff394;
+  --banana-300: #ffe16b;
+  --banana-500: #f9c440;
+  --banana-700: #d48e15;
+  --banana-900: #ad5f00;
+
+  /* Lime */
+  --lime-100: #d1ff82;
+  --lime-300: #9bdb4d;
+  --lime-500: #68b723;
+  --lime-700: #3a9104;
+  --lime-900: #206b00;
+
+  /* Mint */
+  --mint-100: #89ffdd;
+  --mint-300: #43d6b5;
+  --mint-500: #28bca3;
+  --mint-700: #0e9a83;
+  --mint-900: #007367;
+
+  /* Blueberry */
+  --blueberry-100: #8cd5ff;
+  --blueberry-300: #64baff;
+  --blueberry-500: #3689e6;
+  --blueberry-700: #0d52bf;
+  --blueberry-900: #002e99;
+
+  /* Grape */
+  --grape-100: #e4c4fa;
+  --grape-300: #cd9ef7;
+  --grape-500: #a56de2;
+  --grape-700: #7239b3;
+  --grape-900: #452981;
+
+  /* Bubblegum */
+  --bubblegum-100: #fe9ab8;
+  --bubblegum-300: #f4679d;
+  --bubblegum-500: #de3e80;
+  --bubblegum-700: #bc245d;
+  --bubblegum-900: #910e38;
+
+  /* Cocoa */
+  --cocoa-100: #a3907c;
+  --cocoa-300: #8a715e;
+  --cocoa-500: #715344;
+  --cocoa-700: #57392d;
+  --cocoa-900: #3d211b;
+
+  /* Silver */
+  --silver-100: #fafafa;
+  --silver-300: #d4d4d4;
+  --silver-500: #abacae;
+  --silver-700: #7e8087;
+  --silver-900: #555761;
+
+  /* Slate */
+  --slate-100: #95a3ab;
+  --slate-300: #667885;
+  --slate-500: #485a6c;
+  --slate-700: #273445;
+  --slate-900: #0e141f;
+
+  /* Black */
+  --black-100: #666666;
+  --black-300: #4d4d4d;
+  --black-500: #333333;
+  --black-700: #1a1a1a;
+  --black-900: #000000;
+}
+
+body {
+    font-family: 'Noto Sans', 'sans-serif';
+    align-content: center;
+    align-items: center;
+    background-color: var(--silver-100);
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Sans', 'sans-serif';
+    margin: 0;
+    font-weight: 200;
+}
+
+p {
+    color: var(--black-100);
+}
+
+.container {
+    padding: 24px;
+}
+
+button,
+input[type="button"] {
+    padding: 6px 24px;
+    font-family: 'Noto Sans', 'sans-serif';
+    border-radius: 3px;
+    background: var(--silver-100);
+    border: 0.8px solid var(--silver-300);
+    color: var(--black-300);
+    cursor: pointer;
+}
+
+button.blueberry,
+input[type="button"].blueberry {
+    background: linear-gradient(to bottom, var(--blueberry-300), var(--blueberry-500));
+    color: var(--silver-100);
+    border: 0.8px solid var(--blueberry-500);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 0.8px rgba(255, 255, 255, 0.3);
+}
+
+/* Strawberry */
+button.strawberry,
+input[type="button"].strawberry {
+    background: linear-gradient(to bottom, var(--strawberry-300), var(--strawberry-500));
+    color: var(--silver-100);
+    border: 0.8px solid var(--strawberry-500);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 0.8px rgba(255, 255, 255, 0.3);
+}
+
+/* Orange */
+button.orange,
+input[type="button"].orange {
+    background: linear-gradient(to bottom, var(--orange-300), var(--orange-500));
+    color: var(--silver-100);
+    border: 0.8px solid var(--orange-500);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 0.8px rgba(255, 255, 255, 0.3);
+}
+
+/* Banana */
+button.banana,
+input[type="button"].banana {
+    background: linear-gradient(to bottom, var(--banana-300), var(--banana-500));
+    color: var(--silver-100);
+    border: 0.8px solid var(--banana-500);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 0.8px rgba(255, 255, 255, 0.3);
+}
+
+/* Lime */
+button.lime,
+input[type="button"].lime {
+    background: linear-gradient(to bottom, var(--lime-300), var(--lime-500));
+    color: var(--silver-100);
+    border: 0.8px solid var(--lime-500);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 0.8px rgba(255, 255, 255, 0.3);
+}
+
+/* Mint */
+button.mint,
+input[type="button"].mint {
+    background: linear-gradient(to bottom, var(--mint-300), var(--mint-500));
+    color: var(--silver-100);
+    border: 0.8px solid var(--mint-500);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 0.8px rgba(255, 255, 255, 0.3);
+}
+
+/* Grape */
+button.grape,
+input[type="button"].grape {
+    background: linear-gradient(to bottom, var(--grape-300), var(--grape-500));
+    color: var(--silver-100);
+    border: 0.8px solid var(--grape-500);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 0.8px rgba(255, 255, 255, 0.3);
+}
+
+/* Bubblegum */
+button.bubblegum,
+input[type="button"].bubblegum {
+    background: linear-gradient(to bottom, var(--bubblegum-300), var(--bubblegum-500));
+    color: var(--silver-100);
+    border: 0.8px solid var(--bubblegum-500);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 0.8px rgba(255, 255, 255, 0.3);
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+}
+
+button:hover,
+input[type="button"]:hover {
+    filter: brightness(1.1);
+}
+
+/* Form Styles */
+
+input[type="text"] {
+    padding: 8px 8px;
+    font-family: 'Noto Sans', 'sans-serif';
+    border-radius: 3px;
+    background: var(--silver-100);
+    border: 0.8px solid var(--silver-300);
+    box-shadow: inset 0 0 2px 0.1px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: var(--black-100);    
+}
+
+/* Authenticator Lists */
+
+.auth-list-container {
+    overflow-y: scroll;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    display: grid;
+    gap: 12px;
+}
+
+.auth-list-container h1, h2, h3 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.auth-list-container p {
+    margin-top: 12px;
+}
+
+
+.auth-list-item {
+    border-radius: 6px;
+    padding: 24px;
+    border: 0.8px solid var(--silver-300);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-scrim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: var(--silver-100);
+    border-radius: 6px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    z-index: 1001;
+    position: relative;
+    text-align: center;
+}
+
+.modal h1 {
+    text-wrap: wrap;
+    max-width: 100%;
+}
+
+.hidden {
+    display: none !important; /* force it to override */
+}
+
+.QRCodeDiv {
+    margin: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

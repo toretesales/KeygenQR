@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>KeygenQR</h1>
+        <p>Import a standard otpauth URI text file or manually create an entry</p>
+
+        <div style="display: flex; gap: 8px;">
+            <input type="file" id="fileInput" accept=".txt" style="display:none;">
+            <button id="btnImportFile" class="blueberry">Import</button>
+            <button id="btnCreateEntry">Create an Entry</button>
+        </div>
+    </div>
+
+    <div class="container" id="formEnterManually">
+        <form>
+            <h1>Create an Entry</h1>
+            <p>Fulfill the required text fields</p>
+
+            <div>
+                <div style="display: flex; gap: 12px; margin-bottom: 12px;">
+                    <div class="input-div">
+                        <label for="accName">Account Name</label>
+                        <input type="text" id="accNameInput" name="accNameInput" placeholder="johndoe@example.com"
+                            required>
+                    </div>
+                    <div class="input-div">
+                        <label for="issuerName">Issuer</label>
+                        <input type="text" id="issuerNameInput" name="issuerNameInput" placeholder="Example" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="secretKeyInput">Secret Key</label>
+                        <input type="text" id="secretKeyInput" name="secretKeyInput" placeholder="0978gyuhh654"
+                            required>
+                    </div>
+                </div>
+            </div>
+
+            <input class="lime" style="margin-top: 12px;" type="button" id="genManualQR" name="genManualQR"
+                value="Create QR">
+        </form>
+    </div>
+
+    <div class="container" id="authListFromImport">
+        <div>
+            <h1>Imported Entries</h1>
+            <p>0 items</p>
+        </div>
+        <div class="auth-list-container" style="margin-top: 12px;">
+            <div class="auth-list-item">
+                <h3 id="listItemAccName">Account Name</h3>
+                <p id="listIssuerName">Issuer</p>
+                <div style="display: flex; gap: 8px;">
+                    <button>Create QR</button>
+                    <button class="strawberry">Secret Key</button>
+                    <button>Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-scrim hidden" id="qrModal">
+        <div class="modal hidden">
+            <h1>Scan QR</h1>
+            <div id="qrcode" class="QRCodeDiv"></div>
+            <p>Open your authenticator app to scan</p>
+            <button class="lime" style="margin-top: 12px;" id="closeQRModal">Close</button>
+        </div>
+    </div>
+
+    <div class="modal-scrim hidden" id="secretModal">
+        <div class="modal hidden">
+            <h1>Secret Key</h1>
+            <p id="secretKeyDisplay" style="margin: 24px; text-wrap: wrap;"></p>
+            <button class="lime" style="margin-top: 12px;" id="closeSecretModal">Close</button>
+        </div>
+    </div>
+
+
+
+    <script src="qrcode.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
